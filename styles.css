@@ -62,6 +62,10 @@ body {
   background-color: white;
 }
 
+.seccion-ayuda {
+  background-color: #dbb6b6;
+}
+
 .contenedor-general {
   display: flex;
   justify-content: space-between;
