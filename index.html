@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Proyecto personal 4161</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="Pie.css" />
+  </head>
+  <body>
+    <nav class="top-header">
+      <a href="" class="logo">
+        <img height="60" width="60" src="Imagenes/large.png" alt="" />
+      </a>
+      <ul class="Menu-Horizontal">
+        <li>
+          Usuario
+          <ul class="Menu-Vertical">
+            <li><a href="">Ver perfil</a></li>
+            <li>Editar perfil</li>
+            <li>Cambiar contraseña</li>
+            <li>Borrar cuenta</li>
+          </ul>
+        </li>
+        <li>
+          Recetas
+          <ul class="Menu-Vertical">
+            <li><a href="">Subir receta</a></li>
+            <li>Buscar receta</li>
+            <li>Recetas destacadas</li>
+            <li>Filtros de busqueda</li>
+          </ul>
+        </li>
+        <li>
+          Estadisticas
+          <ul class="Menu-Vertical">
+            <li>Tendencias</li>
+            <li>Views</li>
+            <li>Seguidores</li>
+          </ul>
+        </li>
+        <li>
+          Ayuda
+          <ul class="Menu-Vertical">
+            <li>Contactanos!</li>
+            <li>Tutoriales</li>
+            <li>Servicio al cliente</li>
+          </ul>
+        </li>
+        <li></li>
+      </ul>
+    </nav>
+
+    <section class="seccion-recetas">
+      <div class="divisor">
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <div class="contenedor-general">
+        <div class="cont-recetas-texto">
+          <h2>Seccion recetas</h2>
+          <p>
+            Un delicioso chaufa que puedes preparar para toda la familia en tan
+            solo 20 minutos!
+          </p>
+        </div>
+        <div class="cont-prod-imagen">
+          <img height="" width="" src="Imagenes/images (1).jpeg"" alt="" />
+        </div>
+      </div>
+    </section>
+    <!--Seccion USUARIO-->
+    <section class="seccion-usuario">
+      <div class="contenedor-general">
+        <div class="cont-usuario-texto">
+          <h2>Seccion Usuario</h2>
+          <p>Video tutorial para la configuracion del perfil</p>
+        </div>
+        <div class="cont-usuario-video">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/ThwFFdkQoQ8?si=DpKFXeqjjAab3EiH"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <!--Seccion AYUDA-->
+    <section class="seccion-ayuda">
+      <div class="contenedor-general">
+        <div class="div-cont-formulario">
+          <h2>Seccion Ayuda</h2>
+          <p>Complete todos los campos</p>
+
+          <div class="campo">
+            <!--Caja de texto-->
+            <label for="nombre">Nombres completos: </label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Ingrese su nombre:"
+            />
+          </div>
+
+          <div class="campo">
+            <!--Lista desplegable-->
+            <label for="pais">Pais: </label>
+            <select id="pais" name="pais">
+              <option value="">Seleccione un pais</option>
+              <option value="">Peru</option>
+              <option value="">Bolivia</option>
+              <option value="">Colombia</option>
+              <option value="">Argentina</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <!--Checkbox-->
+            <label>Intereses: </label>
+            <ul class="lista-checkbox">
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="Intereses"
+                    value="Tendencias"
+                  />Tendencias</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="Intereses"
+                    value="Estadisticas"
+                  />Estadisticas</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="Intereses"
+                    value="Visualizaciones"
+                  />Visualizaciones</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="Intereses"
+                    value="Seguidores"
+                  />Seguidores</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="Intereses"
+                    value="Opcion5"
+                  />Opcion5</label
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="campo">
+            <!--Radio Button-->
+            <label>Sexo: </label>
+            <ul class="lista-radio">
+              <li>
+                <label
+                  ><input
+                    type="radio"
+                    name="genero"
+                    value="masculino"
+                  />Masculino</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="radio"
+                    name="genero"
+                    value="femenino"
+                  />Femenino</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="genero" value="otro" />Otro</label
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <!-- Enlaces legales -->
+      <div class="footer-links">
+        <h4>Legal</h4>
+        <a href="obtenerDocumento.pdf">Política de Privacidad</a>
+        <!-- Dentro de href llama a un documento pdf con la poltica-->
+        <a href="#">Términos y Condiciones</a>
+        <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
+        <a href="">Protección de Datos</a>
+      </div>
+    <!-- Redes sociales con íconos personalizados -->
+    <div class="footer-social">
+      <h4>Síguenos</h4>
+      <a href="#"
+        ><img
+          src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+          alt="Facebook"
+          class="social-icon"
+      /></a>
+      <a href="#"
+        ><img
+          src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+          alt="Instagram"
+          class="social-icon"
+      /></a>
+      <a href="#"
+        ><img
+          src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+          alt="LinkedIn"
+          class="social-icon"
+      /></a>
+      <a href="#"
+        ><img
+          src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
+          alt="Twitter"
+          class="social-icon"
+      /></a>
+    </div>
+  </div>
+</footer>
+</section>
+  </body>
+</html>
