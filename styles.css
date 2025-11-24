@@ -1,5 +1,10 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
 .top-header {
-  position: fixed;
+  position: fixed; /*Corregir y agrupar con la barra naranja*/
   color: rgb(255, 255, 255);
   width: 100%;
   display: flex;
@@ -11,13 +16,27 @@
   font-size: 1.25rem;
 }
 
-.divisor {
-  color: rgb(255, 255, 255);
+.barra-naranja {
+  position: fixed;
+  color: rgb(0, 0, 0);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 115px 15px 15px 15px;
+  background-color: rgb(253, 154, 17);
+  transform: skew(0, -0.5deg);
+  transform-origin: top left;
+  box-shadow: 0 3px 10px gray;
 }
 
-body {
-  padding: 0 0.938rem 0 0;
-  margin: 0;
+.barra-naranja-unfixed {
+  position: static;
+  padding: 150px 15px 15px 15px;
+}
+
+.logo {
+  z-index: 1;
 }
 
 .Menu-Horizontal {
@@ -27,7 +46,7 @@ body {
   width: 100%;
   max-width: 75rem;
 }
-
+/* justify-content: space-between;*/
 .Menu-Vertical a {
   color: rgb(255, 255, 255);
   text-decoration: none;
@@ -42,14 +61,16 @@ body {
 .Menu-Vertical li:hover {
   color: rgb(255, 255, 255);
   background-color: rgb(255, 182, 80);
+  border-radius: 0.313rem;
 }
 
 .Menu-Vertical {
-  padding: 0;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
   position: absolute;
   display: none;
   width: 8.125rem;
   background-color: rgb(253, 154, 17);
+  border-radius: 0.313rem;
 }
 
 .Menu-Horizontal li:hover .Menu-Vertical {
@@ -57,13 +78,59 @@ body {
 }
 
 /*SECCION PRODUCTOS*/
-.seccion-recetas {
-  padding: 3.75rem 1.25rem;
-  background-color: white;
+.contenedor-general {
 }
 
-.seccion-ayuda {
-  background-color: #dbb6b6;
+.seccion-recetas {
+  padding: 3.75rem 3.75rem 3.75rem 3.75rem;
+  background-color: rgb(99, 208, 255);
+  color: white;
+  border-radius: 0.313rem;
+  margin: 1.2rem;
+  border: rgb(253, 154, 17);
+  border-width: 3px;
+  border-style: solid;
+  box-shadow: 0 3px 10px gray;
+  margin-bottom: 20px;
+}
+
+.seccion-recetas img {
+  border-radius: 0.45rem;
+  width: 80vh;
+  border: rgb(255, 255, 255);
+  border-width: 3px;
+  border-style: solid;
+  box-shadow: 0 3px 10px gray;
+}
+
+.cont-caja-blanca {
+  border-radius: 0.45rem;
+  background-color: rgb(255, 255, 255);
+  border: rgb(253, 154, 17);
+  border-width: 3px;
+  border-style: solid;
+  padding: 0.65rem 0.65rem 0.65rem 0.65rem;
+  margin-bottom: 20px;
+  color: black;
+  box-shadow: 0 3px 10px gray;
+}
+
+.seccion-usuario {
+  padding: 3.75rem 3.75rem 3.75rem 3.75rem;
+  background-color: rgb(99, 208, 255);
+  color: rgb(0, 0, 0);
+  border-radius: 0.313rem;
+  margin: 4rem 200px 4rem 200px;
+  border: rgb(99, 208, 255);
+  border-width: 3px;
+  border-style: solid;
+  box-shadow: 0 3px 10px gray;
+  background-color: #ffffff;
+}
+
+.cont-sec-usuario {
+  padding: 0.75rem 0.75rem 0.75rem 0.75rem;
+  background-color: rgb(172, 172, 172);
 }
 
 .contenedor-general {
@@ -81,40 +148,21 @@ body {
   text-decoration: none;
 }
 
-.cont-recetas-texto {
-  flex: 1;
-}
-
-.cont-recetas-texto h2 {
-  color: red;
-  margin-bottom: 0.938rem;
-}
-
-.cont-recetas-texto p {
-  color: blue;
-  margin-bottom: 0.938rem;
-}
-
-.cont-prod-imagen {
-  flex: 1;
-  text-align: center;
-}
-
-.cont-prod-imagen img {
-  width: 100%;
-  max-width: 31.25rem;
-  height: 100%;
+.seccion-ayuda {
+  background-color: #ffd1a6;
+  margin: auto;
+  display: flex;
 }
 
 .campo {
   align-items: center;
   color: blue;
   border: 0.063rem solid black;
-  padding: 0.938rem;
+  padding: 1.5rem;
   margin-bottom: 0.938rem;
   border-radius: 0.5rem;
   background-color: rgb(218, 218, 218);
-  max-width: 31.25rem;
+  box-shadow: 0 3px 10px gray;
 }
 
 .campo label {
