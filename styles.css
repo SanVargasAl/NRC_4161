@@ -46,7 +46,7 @@ body {
   width: 100%;
   max-width: 75rem;
 }
-/* justify-content: space-between;a*/
+/* justify-content: space-between;*/
 .Menu-Vertical a {
   color: rgb(255, 255, 255);
   text-decoration: none;
@@ -130,7 +130,7 @@ body {
 
 .cont-sec-usuario {
   padding: 0.75rem 0.75rem 0.75rem 0.75rem;
-  background-color: rgb(172, 172, 172);
+  background-color: rgb(182, 233, 255);
 }
 
 .contenedor-general {
@@ -154,14 +154,28 @@ body {
   display: flex;
 }
 
+.seccion-ayuda .contenedor-general {
+  padding: 3.75rem 3.75rem 3.75rem 3.75rem;
+  background-color: rgb(99, 208, 255);
+  color: rgb(0, 0, 0);
+  border-radius: 0.313rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  border: rgb(99, 208, 255);
+  border-width: 3px;
+  border-style: solid;
+  box-shadow: 0 3px 10px gray;
+  background-color: #ffffff;
+}
+
 .campo {
   align-items: center;
-  color: blue;
-  border: 0.063rem solid black;
+  color: white;
+  border: 0.063rem solid rgb(253, 154, 17);
   padding: 1.5rem;
   margin-bottom: 0.938rem;
   border-radius: 0.5rem;
-  background-color: rgb(218, 218, 218);
+  background-color: rgb(99, 208, 255);
   box-shadow: 0 3px 10px gray;
 }
 
@@ -178,17 +192,19 @@ select {
   border: 0.063rem solid #ccc;
   border-radius: 0.313rem;
   box-sizing: border-box;
+  box-shadow: 0 3px 10px rgb(68, 68, 68);
 }
 
 .lista-checkbox,
 .lista-radio {
   width: 100%;
   padding: 0.625rem;
-  border: 0.063rem solid #3d3d3d;
+  border: 0.063rem solid white;
   border-radius: 0.313rem;
   box-sizing: border-box;
-  background-color: rgb(117, 241, 255);
+  background-color: rgb(253, 154, 17);
   list-style: none;
+  box-shadow: 0 3px 10px rgb(68, 68, 68);
 }
 
 option[value=""] {
